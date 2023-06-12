@@ -1,6 +1,10 @@
 package Piece;
 
-public class Piece {
+import java.util.ArrayList;
+
+import Constants.Constants;
+
+abstract public class Piece implements Constants {
 
 	private String name;
 	private String chessImage;
@@ -56,4 +60,6 @@ public class Piece {
 		setPosition_i(position_i);
 		setPosition_j(position_j);
 	}
+
+	abstract public ArrayList<Integer[]> getPossibleMoves();
 }
