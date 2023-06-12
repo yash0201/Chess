@@ -1,3 +1,5 @@
+import Piece.Piece;
+
 public class BoardSquare {
 	private int color;
 	private int location_i;

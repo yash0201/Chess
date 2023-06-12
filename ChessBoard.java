@@ -1,3 +1,11 @@
+import Constants.Constants;
+import Piece.Bishop;
+import Piece.King;
+import Piece.Knight;
+import Piece.Pawn;
+import Piece.Queen;
+import Piece.Rook;
+
 public class ChessBoard implements Constants {
 	
 	private Rook white_rook1;
@@ -134,41 +142,5 @@ public class ChessBoard implements Constants {
 		board[6][5].setPiece(black_pawn6);
 		board[6][6].setPiece(black_pawn7);
 		board[6][7].setPiece(black_pawn8);
-
-		// board[0][0] = white_rook1;
-		// board[0][1] = white_knight1;
-		// board[0][2] = white_bishop1;
-		// board[0][3] = white_queen;
-		// board[0][4] = white_king;
-		// board[0][5] = white_bishop2;
-		// board[0][6] = white_knight2;
-		// board[0][7] = white_rook2;
-
-		// board[1][0] = white_pawn1;
-		// board[1][1] = white_pawn2;
-		// board[1][2] = white_pawn3;
-		// board[1][3] = white_pawn4;
-		// board[1][4] = white_pawn5;
-		// board[1][5] = white_pawn6;
-		// board[1][6] = white_pawn7;
-		// board[1][7] = white_pawn8;
-
-		// board[7][0] = black_rook1;
-		// board[7][1] = black_knight1;
-		// board[7][2] = black_bishop1;
-		// board[7][3] = black_king;
-		// board[7][4] = black_queen;
-		// board[7][5] = black_bishop2;
-		// board[7][6] = black_knight2;
-		// board[7][7] = black_rook2;
-
-		// board[6][0] = black_pawn1;
-		// board[6][1] = black_pawn2;
-		// board[6][2] = black_pawn3;
-		// board[6][3] = black_pawn4;
-		// board[6][4] = black_pawn5;
-		// board[6][5] = black_pawn6;
-		// board[6][6] = black_pawn7;
-		// board[6][7] = black_pawn8;
 	}
 }

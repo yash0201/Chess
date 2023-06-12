@@ -1,4 +1,6 @@
-class Piece {
+package Piece;
+
+public class Piece {
 
 	private String name;
 	private String chessImage;
