@@ -50,13 +50,25 @@ public class ChessBoard implements Constants {
 	private Pawn black_pawn7;
 	private Pawn black_pawn8;
 
-	BoardSquare[][] board;
+	private BoardSquare[][] board;
 
 	public ChessBoard() {
 		board = new BoardSquare[8][8];
-		reset();	
+		reset();
 	}
 
+	// Move chess piece from location 1 to location 2
+	public boolean movePiece(int location1_i, int location1_j, int location2_i, int location2_j) {
+		board[location2_i][location2_j].setPiece(board[location1_i][location1_j].getPiece());
+		board[location1_i][location1_j].setPiece(null);
+		return true;
+	}
+
+	public BoardSquare[][] getBoard() {
+		return board;
+	}
+
+	// it resets the board.
 	public void reset() {
 		white_rook1 = new Rook(WHITE);
 		white_rook2 = new Rook(WHITE);
